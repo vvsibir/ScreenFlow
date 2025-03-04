@@ -505,7 +505,7 @@ namespace ScreenFlowTest
             var scr = Screen.FromControl(this);
             int iscr = -1;
             for(int i = 0; i< Screen.AllScreens.Count(); i++)
-                if(Screen.AllScreens[i]==scr)
+                if(Screen.AllScreens[i].DeviceName==scr.DeviceName)
                 {
                     iscr = i;
                     break;
